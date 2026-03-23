@@ -1,0 +1,25 @@
+{
+    "schemaVersion": 1,
+    "id": "multiminer",
+    "version": "${version}",
+    "name": "MultiMiner",
+    "description": "Mine smarter, not harder. Vein mine ores and fell entire trees with a single break.",
+    "authors": ["MultiMiner Team"],
+    "contact": {},
+    "license": "MIT",
+    "environment": "*",
+    "entrypoints": {
+        "main": ["com.multiminer.MultiMiner"],
+        "client": ["com.multiminer.MultiMinerClient"],
+        "modmenu": ["com.multiminer.config.ModMenuIntegration"]
+    },
+    "depends": {
+        "fabricloader": ">=0.14.0",
+        "fabric": "*",
+        "minecraft": "~1.19.2",
+        "java": ">=17"
+    },
+    "suggests": {
+        "modmenu": "*"
+    }
+}
